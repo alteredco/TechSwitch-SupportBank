@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46f5c79c-472a-4b03-bee3-d19641f8da3c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/SupportBank/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50A7D4C6-BF79-402F-B57E-36B7C2AAE5E0/08/8854ae99/StreamReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SupportBank/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50A7D4C6-BF79-402F-B57E-36B7C2AAE5E0/d4/172b477c/TextReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SupportBank/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SupportBank/Printer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SupportBank/Bank.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SupportBank/Reader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SupportBank/Payment.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SupportBank/Person.cs" />
+        <option value="$PROJECT_DIR$/SupportBank/Bank.cs" />
+        <option value="$PROJECT_DIR$/SupportBank/Printer.cs" />
+        <option value="$PROJECT_DIR$/SupportBank/Wallet.cs" />
+        <option value="$PROJECT_DIR$/SupportBank/support-bank-resources-master/Transactions2014.csv" />
+        <option value="$PROJECT_DIR$/SupportBank/Program.cs" />
+        <option value="$PROJECT_DIR$/SupportBank/Transaction.cs" />
+        <option value="$PROJECT_DIR$/SupportBank/Reader.cs" />
+        <option value="$PROJECT_DIR$/SupportBank/Payment.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XOZHV71XQ8Cwc7trisNCnmjmgz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SupportBank" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/SupportBank/SupportBank.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46f5c79c-472a-4b03-bee3-d19641f8da3c" name="Default Changelist" comment="" />
+      <created>1580919014776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580919014776</updated>
+      <workItem from="1580919019308" duration="6177000" />
+      <workItem from="1580971935011" duration="4413000" />
+      <workItem from="1580982398903" duration="55000" />
+      <workItem from="1580982454795" duration="17255000" />
+      <workItem from="1581018106080" duration="611000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="1860" height="317" key="GridCell.Tab.0.bottom" timestamp="1581005136114">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1228" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580976388776" />
+    <state width="1860" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1581005136114" />
+    <state width="1860" height="317" key="GridCell.Tab.0.center" timestamp="1581005136114">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1228" height="164" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580976388776" />
+    <state width="1860" height="317" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1581005136114" />
+    <state width="1860" height="317" key="GridCell.Tab.0.left" timestamp="1581005136114">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1228" height="164" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580976388776" />
+    <state width="1860" height="317" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1581005136114" />
+    <state width="1860" height="317" key="GridCell.Tab.0.right" timestamp="1581005136114">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1228" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580976388776" />
+    <state width="1860" height="317" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1581005136114" />
+    <state x="231" y="0" width="519" height="563" key="dock-window-1" timestamp="1581018203544">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="231" y="0" width="519" height="563" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1581018203544" />
+    <state x="2209" y="0" width="648" height="792" key="dock-window-1/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1581002777626" />
+  </component>
+</project>

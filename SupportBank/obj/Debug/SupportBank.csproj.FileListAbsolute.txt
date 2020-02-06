@@ -1,0 +1,6 @@
+C:\Users\WenKak\Desktop\Training\SupportBank\SupportBank\bin\Debug\SupportBank.exe
+C:\Users\WenKak\Desktop\Training\SupportBank\SupportBank\bin\Debug\SupportBank.pdb
+C:\Users\WenKak\Desktop\Training\SupportBank\SupportBank\obj\Debug\SupportBank.csprojAssemblyReference.cache
+C:\Users\WenKak\Desktop\Training\SupportBank\SupportBank\obj\Debug\SupportBank.exe
+C:\Users\WenKak\Desktop\Training\SupportBank\SupportBank\obj\Debug\SupportBank.pdb
+C:\Users\WenKak\Desktop\Training\SupportBank\SupportBank\bin\Debug\support-bank-resources-master\Transactions2014.csv
