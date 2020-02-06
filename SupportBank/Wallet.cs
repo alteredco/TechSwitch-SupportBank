@@ -7,6 +7,7 @@ namespace SupportBank
         public double Total { get; set; }
         public double AmountOut { get; set; }
         public double AmountIn { get; set; }
+        public string Owner { get; set; }
         
         public void GetBalance(string name, double total)
         {

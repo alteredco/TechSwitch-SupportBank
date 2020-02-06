@@ -15,8 +15,7 @@ namespace SupportBank
             csvReader.ReadFile(csvPath);
             
             Transaction sbTransactions = new Transaction();
-
-
+            
             Console.ReadLine();
         }
         

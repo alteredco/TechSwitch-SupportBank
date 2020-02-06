@@ -7,17 +7,14 @@ namespace SupportBank
 {
     public class Transaction
     {
-        private ArrayList Payments { get; set; }
+        private List<Payment> Transactions { get; set; }
 
-        public ArrayList PaymentCollection(object payment)
+        public List<Payment> PaymentCollection(Payment payment)
         {
-            Payments = new ArrayList();
-            Payments.Add(payment);
-            foreach (var item in Payments)
-            {
-                Console.WriteLine(Payments.Count);
-            }
-            return Payments;
+            Transactions = new List<Payment>();
+            Transactions.Add(payment);
+           
+            return Transactions;
         }
         
     }

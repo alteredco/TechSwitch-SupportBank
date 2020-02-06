@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace SupportBank
 {
@@ -11,7 +12,7 @@ namespace SupportBank
         public void ReadFile(string FilePath)
         {
             try {
-                var lines = File.ReadAllLines(FilePath);
+                var lines = File.ReadAllLines(FilePath).Skip(1);
                 foreach (string line in lines)
                 {
                     string[] splitLine = line.Split(',');
@@ -30,7 +31,8 @@ namespace SupportBank
                         Amount = amountString,
                     };
                     Transaction sbTransaction = new Transaction();
-                    sbTransaction.PaymentCollection(sbPayment);
+                    Bank sbBank = new Bank();
+                    sbBank.sortTransactions(sbTransaction.PaymentCollection(sbPayment));
                 }
             }
             catch (Exception e)
