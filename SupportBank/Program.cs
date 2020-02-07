@@ -15,7 +15,8 @@ namespace SupportBank
             var transactionList = transactionReader.List(csvPath);
             
             Bank sbBank = new Bank();
-            sbBank.createAccounts(transactionList);
+            var newAccounts = sbBank.createAccounts(transactionList);
+            sbBank.updateWallets(newAccounts, transactionList);
 
             Console.ReadLine();
         }
