@@ -9,10 +9,12 @@ namespace SupportBank
     {
         private string FilePath { get; set; }
 
-        public void ReadFile(string FilePath)
+        public List<Payment> List(string FilePath)
         {
-            try {
+            try
+            {
                 var lines = File.ReadAllLines(FilePath).Skip(1);
+                List<Payment> transactionsList = new List<Payment>();
                 foreach (string line in lines)
                 {
                     string[] splitLine = line.Split(',');
@@ -30,10 +32,20 @@ namespace SupportBank
                         Activity = narrativeString,
                         Amount = amountString,
                     };
-                    Transaction sbTransaction = new Transaction();
-                    Bank sbBank = new Bank();
-                    sbBank.sortTransactions(sbTransaction.PaymentCollection(sbPayment));
+                    transactionsList.Add(sbPayment);
                 }
+
+                foreach (var item in transactionsList)
+                {
+                    Console.WriteLine(
+                        $"Date: {item.Date}, Sender: {item.Sender}, Receiver: {item.Receiver}, Activity: {item.Activity}, Amount: {item.Amount} ");
+                }
+
+                return transactionsList;
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("Something went wrong! Have you checked your filepath? " + e.Message);
             }
             catch (Exception e)
             {

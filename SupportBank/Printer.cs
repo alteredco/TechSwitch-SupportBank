@@ -1,14 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SupportBank
 {
     public class Printer
     {
-        // public string PrintList()
-        // {
-        //     if (string )
-        // }
-
         private string Menu()
         {
             Console.WriteLine("Please choose what you would like to see a list of: ");

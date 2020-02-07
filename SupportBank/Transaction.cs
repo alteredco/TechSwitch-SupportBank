@@ -7,7 +7,7 @@ namespace SupportBank
 {
     public class Transaction
     {
-        private List<Payment> Transactions { get; set; }
+        public List<Payment> Transactions { get; set; }
 
         public List<Payment> PaymentCollection(Payment payment)
         {
@@ -16,7 +16,6 @@ namespace SupportBank
            
             return Transactions;
         }
-        
     }
     
     

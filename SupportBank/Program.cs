@@ -11,11 +11,9 @@ namespace SupportBank
         {
             string csvPath = @"support-bank-resources-master\Transactions2014.csv";
             
-            Reader csvReader = new Reader();
-            csvReader.ReadFile(csvPath);
-            
-            Transaction sbTransactions = new Transaction();
-            
+            Reader transactionReader = new Reader();
+            transactionReader.List(csvPath);
+
             Console.ReadLine();
         }
         

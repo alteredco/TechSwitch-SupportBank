@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SupportBank
 {
@@ -8,6 +9,7 @@ namespace SupportBank
         public double AmountOut { get; set; }
         public double AmountIn { get; set; }
         public string Owner { get; set; }
+        public Payment TransactionList { get; set; }
         
         public void GetBalance(string name, double total)
         {

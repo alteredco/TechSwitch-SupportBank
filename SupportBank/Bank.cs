@@ -9,7 +9,26 @@ namespace SupportBank
         {
             foreach (var item in transactions)
             {
-                Console.WriteLine(item.Receiver);
+                Wallet account = new Wallet
+                {
+                    Total = 0,
+                    AmountOut = 0,
+                    AmountIn = 0,
+                    Owner = item.Receiver,
+                    TransactionList = item,
+                };
+                
+                // if (item.Receiver == Wallet.Owner)
+                // {
+                //     Wallet.Total += item.Amount;
+                // }
+                //
+                // if (item.Sender == Wallet.Owner)
+                // {
+                //     Wallet.Balance -= item.Amount;
+                // }
+                //
+                // return Wallet.Balance;
             }
         }
     }
