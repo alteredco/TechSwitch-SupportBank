@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Principal;
 
 namespace SupportBank
 {
@@ -11,7 +13,7 @@ namespace SupportBank
             {
                 Wallet account = new Wallet
                 {
-                    Total = 0,
+                    Balance = 0,
                     AmountOut = 0,
                     AmountIn = 0,
                     Owner = item.Receiver,
@@ -29,6 +31,24 @@ namespace SupportBank
                 // }
                 //
                 // return Wallet.Balance;
+            }
+            
+        }
+
+        public void groupUsers(List<Payment> transactions)
+        {
+            List<Payment> sortedByUser = transactions.OrderBy(o => o.Receiver).ToList();
+            foreach (var item in sortedByUser)
+            {
+                Wallet account = new Wallet
+                {
+                    Balance = item.Amount,
+                    AmountOut = 0,
+                    AmountIn = item.Amount,
+                    Owner = item.Receiver,
+                };
+                
+                Console.WriteLine("{0} has £{1} in their wallet.", account.Owner, account.Balance);
             }
         }
     }

@@ -46,6 +46,7 @@ namespace SupportBank
             catch (IOException e)
             {
                 Console.WriteLine("Something went wrong! Have you checked your filepath? " + e.Message);
+                throw;
             }
             catch (Exception e)
             {

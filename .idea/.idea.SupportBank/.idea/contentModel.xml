@@ -23,6 +23,7 @@
           <e p="Transactions2014.csv" t="Include" />
         </e>
         <e p="SupportBank.csproj" t="IncludeRecursive" />
+        <e p="Transaction.cs" t="Include" />
         <e p="Wallet.cs" t="Include" />
       </e>
       <e p="SupportBank.sln" t="IncludeFlat" />

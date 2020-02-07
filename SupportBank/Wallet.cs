@@ -5,7 +5,7 @@ namespace SupportBank
 {
     public class Wallet
     {
-        public double Total { get; set; }
+        public double Balance { get; set; }
         public double AmountOut { get; set; }
         public double AmountIn { get; set; }
         public string Owner { get; set; }
