@@ -12,10 +12,10 @@ namespace SupportBank
             string csvPath = @"support-bank-resources-master\Transactions2014.csv";
             
             Reader transactionReader = new Reader();
-            var list = transactionReader.List(csvPath);
+            var transactionList = transactionReader.List(csvPath);
             
             Bank sbBank = new Bank();
-            sbBank.groupUsers(list);
+            sbBank.createAccounts(transactionList);
 
             Console.ReadLine();
         }

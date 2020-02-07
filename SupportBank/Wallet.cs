@@ -6,8 +6,8 @@ namespace SupportBank
     public class Wallet
     {
         public double Balance { get; set; }
-        public double AmountOut { get; set; }
-        public double AmountIn { get; set; }
+        // public double AmountOut { get; set; }
+        // public double AmountIn { get; set; }
         public string Owner { get; set; }
         public Payment TransactionList { get; set; }
         
@@ -16,12 +16,12 @@ namespace SupportBank
             Console.WriteLine($"{name} has a balance of: {total}");
         }
 
-        public double CalculateTotal(double total, double moneyIn, double moneyOut)
-        {
-            total += moneyIn;
-            total -= moneyOut;
-            return total;
-        }
+        // public double CalculateTotal(double total, double moneyIn, double moneyOut)
+        // {
+        //     total += moneyIn;
+        //     total -= moneyOut;
+        //     return total;
+        // }
     }
     
     
