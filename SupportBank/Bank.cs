@@ -11,10 +11,7 @@ namespace SupportBank
         {
             List<Wallet> accountList = new List<Wallet>();
             List<Payment> sortedByUser = transactions.OrderBy(o => o.Receiver).ToList();
-            
-            //Create pot of money
-            var potOfMoney = transactions.Sum(i => i.Amount);
-            
+
             //Create list of unique users
             var listOfNames = new List<string>();
             foreach (var item in transactions)
@@ -25,20 +22,33 @@ namespace SupportBank
                 }
             }
             
-            //Create wallet
-            foreach (var item in listOfNames)
+            //Create wallets with owners
+            foreach (var name in listOfNames)
             {
                 Wallet account = new Wallet
                 {
                     Balance = 0,
-                    Owner = item,
+                    Owner = name,
+                    TransactionList = new List<Payment>()
                 };
                 accountList.Add(account);
+            }
+            
+            //Create list of transactions for each account
+            foreach (var transaction in transactions)
+            {
+                foreach (var account in accountList)
+                {
+                    if (account.Owner == transaction.Sender || account.Owner == transaction.Receiver)
+                    {
+                        account.TransactionList.Add(transaction);
+                    }
+                }
             }
             return accountList;
         }
 
-        public void updateWallets(List<Wallet>accountList, List<Payment> transactions)
+        public List<Wallet> updateWallets(List<Wallet>accountList, List<Payment> transactions)
         {
             foreach (var account in accountList)
             {
@@ -54,28 +64,9 @@ namespace SupportBank
                         account.Balance = account.Balance + transaction.Amount;
                     }
                 }
-                Console.WriteLine(account.Balance);
             }
+
+            return accountList;
         }
-        // var groupedReceiverList = sortedByUser.GroupBy(n => n.Receiver).Select(grp => grp.ToList()).ToList();
-        // foreach (var receiverGroup in groupedReceiverList)
-        // {
-        //     double moneyIn = 0;
-        //     foreach (var receiver in receiverGroup)
-        //     {
-        //         moneyIn = receiverGroup.Sum(i => i.Amount);
-        //         Console.WriteLine(" Name: {0} , MoneyIn: {1} ", receiver.Receiver, moneyIn);
-        //     }
-        // }
-        // var groupedSenderList = sortedByUser.GroupBy(n => n.Sender).Select(grp => grp.ToList()).ToList();
-        // foreach (var senderGroup in groupedSenderList)
-        // {
-        //     double moneyOut = 0;
-        //     foreach (var sender in senderGroup)
-        //     {
-        //         moneyOut = senderGroup.Sum(i => i.Amount);
-        //         Console.WriteLine(" Name: {0} , MoneyOut: {1} ", sender.Sender, moneyOut);
-        //     }
-        // }
     }
 }

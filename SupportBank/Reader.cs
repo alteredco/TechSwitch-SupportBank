@@ -35,17 +35,16 @@ namespace SupportBank
                     transactionsList.Add(sbPayment);
                 }
 
-                foreach (var item in transactionsList)
-                {
-                    Console.WriteLine(
-                        $"Date: {item.Date}, Sender: {item.Sender}, Receiver: {item.Receiver}, Activity: {item.Activity}, Amount: {item.Amount} ");
-                }
-
                 return transactionsList;
             }
             catch (IOException e)
             {
                 Console.WriteLine("Something went wrong! Have you checked your filepath? " + e.Message);
+                throw;
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Something is wrong with the format of your file! " + e.Message);
                 throw;
             }
             catch (Exception e)
