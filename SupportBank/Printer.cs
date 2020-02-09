@@ -8,7 +8,9 @@ namespace SupportBank
     {
         public string Menu()
         {
-            Console.WriteLine("Please choose what you would like to see a list of: ");
+            Console.WriteLine("WELCOME TO SUPPORT BANK");
+            Console.WriteLine("========================");
+            Console.WriteLine("=======================");
             Console.Write("Please enter the number of your choice: 1) List All, 2) List Account  ");
             string input = Console.ReadLine();
             return input;
@@ -49,17 +51,17 @@ namespace SupportBank
                         Console.WriteLine("========================");
                         foreach (var activity in account.TransactionList)
                         {
-                            Console.WriteLine($"Date: {activity.Date}, Sender: {activity.Sender}, Receiver: {activity.Receiver}, Activity: {activity.Activity}, Amount: {activity.Amount} ");
+                            Console.WriteLine($"Date: {activity.Date}, Sender: {activity.Sender}, Receiver: {activity.Receiver}, Activity: {activity.Activity}, Amount: £{activity.Amount} ");
                         }
                         if (account.Balance < 0)
                         {
                             Console.WriteLine("========================");
-                            Console.WriteLine("{0} is owed this much: {1} . You are owed a coffee {0}!", account.Owner,account.Balance);
+                            Console.WriteLine("{0} is down by this much: £{1} . You are owed a coffee {0}!", account.Owner,account.Balance);
                         }
                         else
                         {
                             Console.WriteLine("========================");
-                            Console.WriteLine("{0} owes this much: {1} . Pay up {0}!", account.Owner,account.Balance);
+                            Console.WriteLine("{0} owes this much: £{1} . Pay up {0}!", account.Owner,account.Balance);
                         }
                         
                     }

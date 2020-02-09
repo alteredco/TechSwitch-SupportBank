@@ -16,7 +16,7 @@ namespace SupportBank
             Bank sbBank = new Bank();
             var newAccounts = sbBank.createAccounts(transactionList);
             var updatedAccounts = sbBank.updateWallets(newAccounts, transactionList);
-            string input =  sbPrinter.Menu();
+            string input = sbPrinter.Menu();
             sbPrinter.PrintLists(input, transactionList, updatedAccounts);
 
             Console.ReadLine();
