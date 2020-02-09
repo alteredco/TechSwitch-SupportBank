@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace SupportBank
 {
@@ -8,12 +9,21 @@ namespace SupportBank
     {
         public string Menu()
         {
-            Console.WriteLine("WELCOME TO SUPPORT BANK");
-            Console.WriteLine("========================");
-            Console.WriteLine("=======================");
-            Console.Write("Please enter the number of your choice: 1) List All, 2) List Account  ");
-            string input = Console.ReadLine();
-            return input;
+            try
+            {
+                Console.WriteLine("WELCOME TO SUPPORT BANK");
+                Console.WriteLine("========================");
+                Console.WriteLine("=======================");
+                Console.Write("Please enter the number of your choice: 1) List All, 2) List Account  ");
+                string input = Console.ReadLine();
+                return input;
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("There is something wrong with the number you entered. Try again! "+ e.Message);
+                throw;
+            }
+            
         }
 
         public void PrintLists(string input,List<Payment> transactions, List<Wallet> accountList)
@@ -32,10 +42,10 @@ namespace SupportBank
             
             if (input == "1")
             {
-                foreach (var item in transactions)
+                foreach (var account in accountList)
                 {
                     Console.WriteLine(
-                        $"Date: {item.Date}, Sender: {item.Sender}, Receiver: {item.Receiver}, Activity: {item.Activity}, Amount: {item.Amount} ");
+                        $"Name: {account.Owner}, Balance: £{account.Balance}");
                 }
             }
             else if (input == $"2")
